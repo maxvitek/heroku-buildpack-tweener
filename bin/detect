@@ -10,4 +10,4 @@ if [ ! -d $BUILD_DIR/.buildpack_shell ] || [ ! -d $BUILD_DIR/.buildpack_shell/fi
   exit 1
 fi
 
-echo "----->Tweener Components Detected" && exit 0
+echo "Tweener" && exit 0
