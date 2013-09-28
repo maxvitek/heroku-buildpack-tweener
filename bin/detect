@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+
+# Exit early if app does not contain a shell script to execute
+if [ ! -d $BUILD_DIR/.buildpack_shell ] || [ ! -d $BUILD_DIR/.buildpack_shell/fin ] || [ ! -d $BUILD_DIR/.buildpack_shell/scripts ] || [ ! "$(ls -A $BUILD_DIR/.buildpack_shell/scripts)" ]; then
+  exit 1
+fi
+
+echo Tweener
