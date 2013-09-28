@@ -2,8 +2,8 @@
 
 BUILD_DIR=$1
 
-SCRIPT_DIR=$BUILD_DIR/.buildpack_shell/scripts
-FIN_DIR=$BUILD_DIR/.buildpack_shell/fin
+SCRIPT_DIR=$BUILD_DIR/buildpack_shell/scripts
+FIN_DIR=$BUILD_DIR/buildpack_shell/fin
 SCRIPT="$(ls $SCRIPT_DIR | head -1)"
 
 bash $SCRIPT_DIR/$SCRIPT
